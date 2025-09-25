@@ -1,0 +1,14 @@
+# filename: requirements.txt
+
+torch
+torchvision
+diffusers==0.27.2
+accelerate==0.27.2
+peft==0.9.0
+transformers==4.38.2
+huggingface-hub==0.20.3
+advertorch
+tqdm
+pandas
+numpy
+safetensors
