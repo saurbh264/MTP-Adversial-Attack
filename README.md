@@ -6,6 +6,8 @@ The core problem with the original approach was using a high-resolution Stable D
 
 This new implementation resolves that issue by replacing the Stable Diffusion backbone with a `UNet2DModel` pre-trained directly on CIFAR-10. The entire purification process now happens in the native 32x32 pixel space, eliminating the need for a VAE, upsampling, or downsampling.
 
+The model used is - https://huggingface.co/google/ddpm-cifar10-32
+
 ## Project Structure
 
 - `train_lora.py`: The main script for training the purifier using the GAND objective.
